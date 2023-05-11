@@ -22,10 +22,13 @@
 
 
 const fs = require("fs")
-const myFile = fs.writeFile("./me.txt", "names of some backend students",(error, data)=>{
+fs.readFile("./The Danger of a Single Story - Chimamanda Adichie Ngozi.pdf", (error, data)=>{
     if (error){
-        console.log("oops")
-    }else {console.log("good")};
+        console.log(error)
+    
+    }
+
+    else {console.log(data.toString())};
 
 });
 
