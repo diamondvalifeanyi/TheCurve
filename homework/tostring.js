@@ -1,5 +1,5 @@
 const fs = require("fs")
-fs.readFile("./The Danger of a Single Story - Chimamanda Adichie Ngozi.pdf", (error, data)=>{
+fs.readFile("./classfile.pdf", (error, data)=>{
     if (error){
         console.log(error)
     
@@ -8,3 +8,11 @@ fs.readFile("./The Danger of a Single Story - Chimamanda Adichie Ngozi.pdf", (er
     else {console.log(data.toString())};
 
 });
+
+// const fs = require('fs')
+// const pdf12 = require('pdf-parse')
+
+// let abc = fs.readFileSync('./classfile.pdf')
+// pdf12(abc).then(function(data){
+//     console.log(data.text)
+// })
